@@ -14,8 +14,6 @@ classifiers = [
 ]
 
 dependencies = [
-  'sys',
-  'base64',
   'requests',
   'com_digitalruiz_my_logger',
 ]
