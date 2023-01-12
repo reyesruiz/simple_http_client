@@ -15,7 +15,7 @@ classifiers = [
 
 dependencies = [
   'requests',
-  'com_digitalruiz_my_logger',
+  'com-digitalruiz-my-logger',
 ]
 
 [project.urls]
