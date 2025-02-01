@@ -23,6 +23,18 @@ def get(url, headers=''):
     LOGGER.error("Unable to get %s", url)
     return False
 
+def get_binary(url, headers=''):
+    '''
+    Simple http get method to grab binary data
+    '''
+    LOGGER.info("Getting %s", url)
+    response = requests.get(url, headers=headers, timeout=10)
+    if response.status_code == 200:
+        content = response.content
+        return content
+    LOGGER.error("Unable to get %s", url)
+    return False
+
 def get_image(url):
     '''
     Simple way to download jpg and convert it to base64
