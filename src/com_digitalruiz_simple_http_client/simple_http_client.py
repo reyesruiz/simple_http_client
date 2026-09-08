@@ -43,7 +43,7 @@ def get_image(url):
     content = base64.b64encode(requests.get(url,timeout=60).content)
     return content
 
-def post(url, headers='', data=''):
+def post(url, headers='', data='', return_json=''):
     '''
     Simple http post method
     '''
